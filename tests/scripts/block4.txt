@@ -1,0 +1,18 @@
+# Kinsale Rd Block 4: SketchUp olmadan açma, üst görünüm, kıyaslama, DEAP (proje kökünden çalıştırın)
+wait 1500
+open Kinsale Rd Block 4.skp
+wait 2000
+log acildi
+tool camera/standard views/top
+key shift+z
+wait 300
+shot block4-ust.png
+bench
+movebench 300 250 900 650 60
+dragbench tools/pushpull Unit 101 30
+dragbench tools/move Unit 101 30
+deap tests\scripts
+wait 500
+log deap-sonrasi
+shot block4-deap.png
+exit

@@ -1,0 +1,5 @@
+# DEAP golden comparisons: one line per model, "model.skp | DEAP_Evidence_Output.csv made by the SketchUp extension".
+# Relative paths are resolved from the solution folder (next to Sketch.slnx); the files themselves are not committed.
+# Example with absolute paths:
+# C:\Users\bkocatas\Desktop\Projects\Kinsale Road\Kinsale Rd Block 1.skp | C:\Users\bkocatas\Desktop\DEAP\Kinsale1\DEAP_Evidence_Output.csv
+Kinsale Rd Block 4.skp | DEAP_Evidence_Output_Block4.csv

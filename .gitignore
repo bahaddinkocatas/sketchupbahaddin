@@ -1,0 +1,16 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+TestResults/
+# The user's own SketchUp project files are used for local testing only
+*.skp
+# The SketchUp extension's CSV outputs used by the DEAP golden test (user data, not committed)
+DEAP_Evidence_Output*.csv
+# Script-mode outputs
+tests/scripts/*.png
+tests/scripts/*.log
+tests/scripts/DEAP_Evidence_Output.csv
+# Installer build output (Setup-Olustur.cmd)
+artifacts/

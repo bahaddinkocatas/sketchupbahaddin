@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Sketch.App/Sketch.App.csproj" />
+    <Project Path="src/Sketch.Geometry/Sketch.Geometry.csproj" />
+    <Project Path="src/Sketch.Inference/Sketch.Inference.csproj" />
+    <Project Path="src/Sketch.IO/Sketch.IO.csproj" />
+    <Project Path="src/Sketch.Model/Sketch.Model.csproj" />
+    <Project Path="src/Sketch.Operations/Sketch.Operations.csproj" />
+    <Project Path="src/Sketch.Rendering/Sketch.Rendering.csproj" />
+    <Project Path="src/Sketch.Tools/Sketch.Tools.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Sketch.Inference.Tests/Sketch.Inference.Tests.csproj" />
+    <Project Path="tests/Sketch.Model.Tests/Sketch.Model.Tests.csproj" />
+    <Project Path="tests/Sketch.Operations.Tests/Sketch.Operations.Tests.csproj" />
+  </Folder>
+</Solution>

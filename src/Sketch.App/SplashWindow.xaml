@@ -1,0 +1,58 @@
+<Window x:Class="Sketch.App.SplashWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sketch" Width="580" Height="360"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen" ShowInTaskbar="False" Topmost="True">
+    <!-- Splash screen shown while the application starts: dark card, cube logo, title, progress line. -->
+    <Border Margin="16" CornerRadius="14" BorderBrush="#2E4366" BorderThickness="1">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#13233B" Offset="0" />
+                <GradientStop Color="#0B1626" Offset="1" />
+            </LinearGradientBrush>
+        </Border.Background>
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="18" ShadowDepth="0" Opacity="0.55" Color="Black" />
+        </Border.Effect>
+        <Grid Margin="36,30,36,22">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <!-- Isometric cube: three shaded faces with orange edges. -->
+                <Canvas Width="76" Height="80" HorizontalAlignment="Center" Margin="0,0,0,14">
+                    <Path Data="M38,4 L72,22 L38,40 L4,22 Z" Fill="#E9EEF5" />
+                    <Path Data="M4,22 L38,40 L38,78 L4,60 Z" Fill="#A9B6C8" />
+                    <Path Data="M72,22 L38,40 L38,78 L72,60 Z" Fill="#7C8BA1" />
+                    <Path Data="M38,4 L72,22 L72,60 L38,78 L4,60 L4,22 Z M4,22 L38,40 L72,22 M38,40 L38,78"
+                          Stroke="#F08A1C" StrokeThickness="2.2" StrokeLineJoin="Round" />
+                </Canvas>
+                <TextBlock Text="S K E T C H" Foreground="White" FontFamily="Segoe UI Light" FontSize="40"
+                           HorizontalAlignment="Center" />
+                <Rectangle Height="2" Width="64" Fill="#F08A1C" Margin="0,10,0,10" HorizontalAlignment="Center" RadiusX="1" RadiusY="1" />
+                <TextBlock Text="Thermal Modelling &amp; DEAP Evidence" Foreground="#AEBBD0" FontFamily="Segoe UI"
+                           FontSize="15" HorizontalAlignment="Center" />
+            </StackPanel>
+
+            <!-- Loading line: filled over the splash time by an animation started in code. -->
+            <Grid Grid.Row="1" Margin="0,18,0,6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Border x:Name="Track" Height="4" CornerRadius="2" Background="#24364F" VerticalAlignment="Center">
+                    <Border x:Name="Fill" Height="4" CornerRadius="2" Background="#F08A1C" HorizontalAlignment="Left" Width="0" />
+                </Border>
+                <TextBlock Grid.Column="1" Text="Loading..." Foreground="#8C9BB2" FontFamily="Segoe UI" FontSize="12"
+                           Margin="12,0,0,0" VerticalAlignment="Center" />
+            </Grid>
+
+            <TextBlock Grid.Row="2" Margin="0,8,0,0" Text="by Bahaddin Kocataş" Foreground="#8C9BB2" FontFamily="Segoe UI" FontSize="12"
+                       HorizontalAlignment="Right" />
+        </Grid>
+    </Border>
+</Window>

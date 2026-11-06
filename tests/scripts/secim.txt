@@ -1,0 +1,29 @@
+# Block 4'te seçim: plan grubu, daire, Ctrl ile ekleme, pencere ve kesişim seçimi (proje kökünden çalıştırın)
+wait 1500
+open Kinsale Rd Block 4.skp
+wait 2000
+tool camera/standard views/top
+key shift+z
+wait 300
+pick 720 330
+move 720 330
+wait 200
+shot secim-plan-uzerinde.png
+click 720 330
+sel
+click 50 50
+click 560 400
+sel
+click 470 350 ctrl
+sel
+click 50 50
+down 250 120
+move 850 620
+up 850 620
+sel
+click 50 50
+down 850 620
+move 500 400
+up 500 400
+sel
+exit

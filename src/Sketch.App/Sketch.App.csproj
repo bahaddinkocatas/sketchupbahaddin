@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sketch.Geometry\Sketch.Geometry.csproj" />
+    <ProjectReference Include="..\Sketch.Model\Sketch.Model.csproj" />
+    <ProjectReference Include="..\Sketch.Operations\Sketch.Operations.csproj" />
+    <ProjectReference Include="..\Sketch.Inference\Sketch.Inference.csproj" />
+    <ProjectReference Include="..\Sketch.Tools\Sketch.Tools.csproj" />
+    <ProjectReference Include="..\Sketch.Rendering\Sketch.Rendering.csproj" />
+    <ProjectReference Include="..\Sketch.IO\Sketch.IO.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <!-- Shown by Windows for the program: icon (tools/icons/make_app_icon.ps1), name in Task Manager. -->
+    <ApplicationIcon>Resources\Sketch.ico</ApplicationIcon>
+    <AssemblyTitle>Sketch</AssemblyTitle>
+    <Product>Sketch</Product>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+</Project>

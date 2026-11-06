@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibTessDotNet" Version="1.1.15" />
+    <PackageReference Include="Silk.NET.OpenGL" Version="2.23.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sketch.Geometry\Sketch.Geometry.csproj" />
+    <ProjectReference Include="..\Sketch.Model\Sketch.Model.csproj" />
+    <ProjectReference Include="..\Sketch.Inference\Sketch.Inference.csproj" />
+    <ProjectReference Include="..\Sketch.Tools\Sketch.Tools.csproj" />
+  </ItemGroup>
+
+</Project>

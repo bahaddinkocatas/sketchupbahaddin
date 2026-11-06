@@ -1,0 +1,14 @@
+# Duman testi: dikdörtgen çiz, Push/Pull, tüm araçlar
+wait 1500
+log baslangic
+key R
+click 400 450
+move 560 380
+click 560 380
+log dikdortgen
+key escape
+shot duman-model.png
+alltools
+wait 500
+log alltools-sonrasi
+exit
